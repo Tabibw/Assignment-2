@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .bg-img{
+    background-image: url(../images/bg.png);
+  }
+  /* navbar */
+
+  .navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-icon{
+    display: none;
+  }
+  .navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .logos{
+    display: flex;
+    gap: 5px;
+    /* border: 2px solid red; */
+    width: 230px;
+    align-items: center;
+  }
+  .logos img{
+    /* width: 10px; */
+    /* border: 2px solid rgb(76, 0, 255); */
+    width: 100px;
+    width: 100%;
+  }
+
+  .logos h3{
+    font-size: 2.25rem;
+    font-weight: 800;
+  }
+  .anchor a{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.25rem;
+  }
+  .navbar button{
+    padding: 10px 50px 10px 50px;
+    font-size: 20px;
+    font-weight: 550;
+    border-radius: 12px;
+    background-color: rgb(254, 163, 1);
+    border: none;
+    color: white;
+  }
+
+  /* banner */
+  .banner{
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between; 
+  }
+  header{
+    border-bottom: 2px dashed rgba(128, 128, 128, 0.648) ;
+  }
+  .banner-title{
+    font-size: 56px;
+    font-weight: 700;  
+  }
+  .banner-description{
+    font-size: 20px;
+    font-weight: 400;  
+  }
+  .banner-btn{
+    padding: 10px 40px 10px 40px;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 12px;
+    background-color: rgb(17, 17, 17);
+    border: none;
+    color: white;  
+  }
+
+  /* Responsive */
+ @media screen and (max-width:576px) {
+    .navbar{
+      flex-direction: row;
+      padding-bottom: 15px;
+      border-bottom: 2px solid orange;
+    }
+    .banner{
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .banner-title{
+      font-size: 32px;
+    }
+    .banner-image{
+      width: 400px;
+    }
+    .navbar h3, .navbar-btn, a{
+      display: none;
+      justify-content: space-between;
+    }
+    .logos{
+      width: 250px;
+    }
+    .logos img{
+      max-width: 60px;
+      width: 100%;
+    }
+    .nav-icon{
+      display: inline;
+    }
+ }
