@@ -526,6 +526,10 @@ footer {
 
   .nav-icon {
     display: inline;
+    padding-right: 10px;
+  }
+  .navbar img{
+    padding-left: 5px;
   }
 
   .Curriculum-details {
