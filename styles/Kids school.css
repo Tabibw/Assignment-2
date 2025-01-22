@@ -399,7 +399,87 @@
   align-items: center;
 }
 
+/* footer */
+footer {
+  background-color: rgb(252, 205, 125);
+}
 
+.footer {
+  display: flex;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 160px;
+  justify-content: space-between;
+  
+}
+
+.footer-detail {
+  display: flex;
+  text-align: left;
+  border: 2px solid rebeccapurple;
+  width: 350px;
+  padding-bottom: -80px;
+}
+
+.footer-detail img {
+  padding-bottom: 15px;
+  padding-top: 30px;
+  width: 105px;
+  height: fit-content;
+}
+
+.footer-detail h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.footer-title p {
+  font-size: 20px;
+  /* margin-right: 20px; */
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(255, 38, 0);
+}
+
+.About-School {
+
+
+}
+
+.About-School h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.About-School a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.list-items {
+  list-style: none;
+  padding-top: 15px;
+}
+.list-links{
+  display: flex;
+
+}
+
+.Keep-In-Touch h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+
+}
+.Keep-In-Touch img{
+  border: 2px solid rgb(255, 38, 0);
+  width: 50px;
+}
 
 /* Responsive */
 @media screen and (max-width:576px) {
@@ -486,7 +566,7 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    
+
   }
 
   #card-2 button,
@@ -516,6 +596,19 @@
     padding: 30px 20px 30px 20px;
     font-size: 17px;
     font-weight: 700;
+  }
+  .footer{
+    padding-left: 10px;
+  }
+  .footer, .footer-detail, .list-links{
+    flex-direction: column;
+  }
+  .About-School{
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+  .About-School h4{
+    margin-bottom: 20px;
   }
 
 }
