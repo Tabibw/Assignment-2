@@ -434,9 +434,7 @@ footer {
   font-weight: 700;
   color: rgb(0, 0, 0);
 }
-.footer-title{
-  /* border: 2px solid rgb(255, 38, 0); */
-}
+
 .footer-title p {
   font-size: 20px;
   font-weight: 500;
@@ -477,7 +475,10 @@ footer {
   /* border: 2px solid rgb(255, 38, 0); */
   width: 50px;
 }
-
+.footer-marquee{
+  background-color: rgb(255, 255, 255);
+  color: rgb(214, 118, 1)
+}
 /* Responsive */
 @media screen and (max-width:576px) {
   .navbar {
@@ -602,7 +603,7 @@ footer {
   .footer{
     padding-left: 10px;
   }
-  .footer, .footer-detail, .list-links{
+  .footer, .list-links{
     flex-direction: column;
   }
   .About-School{
